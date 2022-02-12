@@ -1,0 +1,14 @@
+h1.solid {border-style: solid, yellow;
+background-color: yellow;
+text-align: center;
+}
+
+p.double {outline-style: double;
+}
+
+div {
+  background-color: grey;
+  padding: 35px;
+  margin: 150px;
+  
+}

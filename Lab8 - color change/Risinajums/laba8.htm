@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+  
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+    <!-- Add the style sheet. -->
+    <link id="theme" rel="stylesheet" 
+        type="text/css" href="small.css" />
+  
+    <script>
+        function changeStyle() {
+		//iegust datus no link elementa
+            var theme = document.getElementsByTagName('link')[0];
+  
+            if (theme.getAttribute('href') == 'small.css') {
+                theme.setAttribute('href', 'medium.css');
+				theme.setAttribute('href','large.css');
+            } else {
+                theme.setAttribute('href', 'small.css');
+				theme.setAttribute('href', 'medium.css')
+            }
+        }
+		
+    </script>
+</head>
+  
+<body>
+
+<div onclick="changeStyle()">
+ <select  name="style" id="h1">
+    <option value="small">Small</option>
+    <option value="medium">Medium</option>
+    <option value="large">Large</option>
+  </select>
+  <br><br></div>
+
+<table>
+  <tr>
+    <th><h1 id="h1">Java</h1>
+         <p>Java...</p>
+         <p>Java...</p>
+         <p id="h1">C++...</p>
+         <p>C++...</p>
+         <p>C++...</p>
+         <p>C++...</p></th>
+</tr>
+</table>
+
+
+    <button onclick="changeStyle()">Reset</button>
+</body>
+  
+</html>

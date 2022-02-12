@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="Text/CSS">
+<!--
+body{ background-color: blue;
+}
+
+h1{ color: black;
+}
+#Red{ color: red;
+}
+#super
+{
+ vertical-align: super;
+ font-size: medium;
+}
+
+.p1{
+color: yellow;
+}
+.p2{
+color: white;
+font-weight: bold
+}
+
+-->
+</style>
+
+</head>
+
+<h1>Example of cycle FOR:</h1>
+
+<body>
+
+<div><pre>
+<p id="p1">Program Cycle;</p>
+<p id="p2">Uses CRT;
+Var
+    i:Integer;
+Begin
+   ClrScr;
+   Writeln('Numerics and squares:');
+ For i:=1 To 5 Do
+        WriteLn(i, ' => ', i*i); <span id="Red">{i and i<span id="super">2</span>}</span>
+End.</p>
+</div></pre>
+
+
+<script>
+document.getElementById("p1").style.color = "yellow";
+document.getElementById("p2").style.color = "white";
+</script>
+
+
+</body>
+</html>

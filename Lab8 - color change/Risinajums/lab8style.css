@@ -1,0 +1,19 @@
+table, th, td {
+  border: 1px solid black;
+}
+
+#h1 {
+  color: red;
+  font-size: 20pt;
+  letter-spacing: 1;
+}
+#h2 {
+  color: yellow;
+  font-size: 30pt;
+  letter-spacing: 3;
+}
+#h3 {
+  color: green;
+  font-size: 40pt;
+  letter-spacing: 5;
+}

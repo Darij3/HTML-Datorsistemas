@@ -1,0 +1,83 @@
+
+// Diagnostic Settings for blob with connection to Log Analytics worksspace 
+resource diagnosticSetting_resource 'microsoft.insights/diagnosticSettings@2021-05-01-preview' = {
+  scope: storageAccount
+  name: diagnosticSettingBlobName
+  properties: {
+    workspaceId: logAnalyticsWorkspaceId
+     logs: [
+      {
+        category: 'StorageRead'
+        enabled: true
+        retentionPolicy: {
+          days: diagnosticLogRetentionPeriod
+          enabled: true
+        }
+      }
+
+      {
+        category: 'StorageWrite'
+        enabled: true
+        retentionPolicy: {
+          days: diagnosticLogRetentionPeriod
+          enabled: true
+        }
+      }
+      {
+        category: 'StorageDelete'
+        enabled: true
+        retentionPolicy: {
+          days: diagnosticLogRetentionPeriod
+          enabled: true
+        }
+      }
+    ]
+    metrics: [
+      {
+        category: 'Transaction'
+        enabled: true
+      }
+    ]
+  }
+}
+// Diagnostic Settings for file with connection to Log Analytics worksspace 
+resource diagnosticSetting_resource 'microsoft.insights/diagnosticSettings@2021-05-01-preview' = {
+  scope: storageAccount
+  name: diagnosticSettingFileName
+  properties: {
+    workspaceId: logAnalyticsWorkspaceId
+     logs: [
+      {
+        category: 'StorageRead'
+        enabled: true
+        retentionPolicy: {
+          days: diagnosticLogRetentionPeriod
+          enabled: true
+        }
+      }
+
+      {
+        category: 'StorageWrite'
+        enabled: true
+        retentionPolicy: {
+          days: diagnosticLogRetentionPeriod
+          enabled: true
+        }
+      }
+      {
+        category: 'StorageDelete'
+        enabled: true
+        retentionPolicy: {
+          days: diagnosticLogRetentionPeriod
+          enabled: true
+        }
+      }
+    ]
+    metrics: [
+      {
+        category: 'Transaction'
+        enabled: true
+      }
+    ]
+  }
+}

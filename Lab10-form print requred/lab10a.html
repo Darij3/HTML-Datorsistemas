@@ -1,0 +1,186 @@
+
+
+<!DOCTYPE html>
+<html>
+  <style>
+    table {
+      border: 1px solid black;
+      width: 100%;
+      text-align: left;
+
+    }
+
+    th,
+    td {
+      width: 50%
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    #lvl {
+      color: blue
+    }
+  </style>
+
+
+<script>
+
+function validateForm() {
+  let x = document.forms["candForm"]["name"].value;
+  if (x == "") {
+var name = prompt("This page says");
+alert("Error: NAME is missing ")
+    return false;
+  }
+}
+function validateForm() {
+  let x = document.forms["candForm"]["name"].value;
+  if (x == "") {
+var name = prompt("This page says");
+alert("Error: SURNAME is missing ")
+    return false;
+  }
+}
+function validateForm() {
+  let x = document.forms["candForm"]["name"].value;
+  if (x == "") {
+var name = prompt("This page says");
+alert("Error: UNIVERSITY is missing ")
+    return false;
+  }
+}
+function validateForm() {
+  let x = document.forms["candForm"]["name"].value;
+  if (x == "") {
+var name = prompt("This page says");
+alert("Error: AGE is missing ")
+    return false;
+  }
+}
+</script>
+
+
+  <body>
+
+    <h1>Form for Candidate</h1>
+
+
+
+    <table name="candform" cellpadding="20">
+
+      <tr>
+        <th><label for="name" accesskey="N"><u>N</u>ame:</label>
+          <input type="text" id="name" name="name" value=""><br>
+          <label for="name" accesskey="S"><u>S</u>urname:</label>
+          <input type="text" id="name" name="name" value=""><br><br>
+          <label for="name" accesskey="A"><u>A</u>ge(years):</label>
+          <input type="text" id="name" name="name" value=""><br>
+          <label for="name" accesskey="U"><u>U</u>niversity:</label>
+          <input type="text" id="name" name="name" value=""><br>
+        </th>
+
+        <th> <label for="level">Diploma:</label>
+          <select name="level" id="level">
+            <option value="eng">Engineer</option>
+            <option value="mgs">Master</option>
+            <option value="phd">Doctor</option>
+          </select>
+        </th>
+      </tr>
+
+      <tr>
+        <th>
+          <fieldset title="Prog" style="width:200pt">
+            <legend id="lvl">Programming:</legend>
+            <input type="radio" name="prog" value="prog">Begginer<br>
+            <input type="radio" name="prog" value="prog">Professional<br>
+            <input type="radio" name="prog" value="prog">Expert<br>
+          </fieldset>
+        </th>
+
+        <th>
+          <fieldset title="Networks" style="width:200pt">
+            <legend id="lvl">Networks:</legend>
+            <input type="radio" name="net" value="net">Begginer<br>
+            <input type="radio" name="net" value="net">Professional<br>
+            <input type="radio" name="net" value="net">Expert<br>
+          </fieldset>
+        </th>
+
+        <th>
+          <fieldset title="Computer Graphics" style="width:200pt">
+            <legend id="lvl">Computer Graphics:</legend>
+            <input type="radio" name="lang" value="lang">Begginer<br>
+            <input type="radio" name="lang" value="lang">Professional<br>
+            <input type="radio" name="lang" value="lang">Expert<br>
+          </fieldset>
+        </th>
+
+        <th>
+          <fieldset title="Web Technologies" style="width:200pt">
+            <legend id="lvl">Programme:</legend>
+            <input type="radio" name="web" value="web">Begginer<br>
+            <input type="radio" name="web" value="web">Professional<br>
+            <input type="radio" name="web" value="web">Expert<br>
+          </fieldset>
+        </th>
+      </tr>
+
+      <th>
+        <h3><i>Languages:</i></h3>
+        <input type="checkbox" id="lang" name="languages" value="C">
+        <label for="lang"> C</label><br>
+        <input type="checkbox" id="lang" name="languages" value="C++">
+        <label for="lang"> C++</label><br>
+        <input type="checkbox" id="lang" name="languages" value="Java">
+        <label for="lang"> Java</label><br><br>
+        <input type="checkbox" id="lang" name="languages" value="C#">
+        <label for="lang"> C#</label><br>
+        <input type="checkbox" id="lang" name="languages" value="Pascal">
+        <label for="lang"> Pascal</label><br>
+        <input type="checkbox" id="lang" name="languages" value="Ada">
+        <label for="lang"> Ada</label><br><br>
+        <input type="checkbox" id="lang" name="languages" value="Python">
+        <label for="lang"> Python</label><br>
+        <input type="checkbox" id="lang" name="languages" value="Ruby">
+        <label for="lang"> Ruby</label><br>
+        <h3><i>Operating system:</i></h3>
+        <input type="checkbox" id="os" name="opsys" value="Windows">
+        <label for="os"> Windows</label><br><br>
+        <input type="checkbox" id="os" name="opsys" value="Linux">
+        <label for="os"> Linux</label><br>
+        <input type="checkbox" id="os" name="opsys" value="Unix">
+        <label for="os"> Unix</label><br>
+        <input type="checkbox" id="os" name="opsys" value="Solaris">
+        <label for="vehicle3"> Solaris</label><br><br>
+        <h3><i>Computer graphics:</i></h3>
+        <input type="checkbox" id="des" name="destool" value="Coler DRAW">
+        <label for="des"> Coler DRAW</label><br>
+        <input type="checkbox" id="des" name="destool" value="Adobe Photoshop">
+        <label for="des"> Adobe Photoshop</label><br>
+        <input type="checkbox" id="des" name="destool" value="Quark">
+        <label for="des"> QuarkXPress</label><br><br>
+        <h3><i>Web technologies:</i></h3>
+        <input type="checkbox" id="webtool" name="vwebtool" value="DHTML">
+        <label for="web"> DHTML</label><br>
+        <input type="checkbox" id="vehicle2" name="webtool" value="XML">
+        <label for="web"> XML</label><br>
+        <input type="checkbox" id="webtool" name="webtool" value="PHP">
+        <label for="web"> PHP</label><br><br>
+        <input type="checkbox" id="webtool" name="webtool" value="ASP">
+        <label for="web"> ASP</label><br>
+        <input type="checkbox" id="webtool" name="webtool" value="JSP">
+        <label for="web"> JSP</label><br>
+
+        <input type="submit" value="Reset"><br>
+        <input type="submit" value="Send">
+      </th>
+      </th>
+    </table>
+  </body>
+
+</html>
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif}
+.photos {display: none}
+img {vertical-align: middle;}
+
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="showslides">
+
+<div class="photos">
+  <img src="one.jpg">
+  <div class="text">Slide one.jpg</div>
+</div>
+
+<div class="photos">
+ 
+  <img src="two.jpg">
+  <div class="text">Slide two.jpg</div>
+</div>
+
+<div class="photos">
+  <img src="three.jpg">
+  <div class="text">Slide three.jpg</div>
+</div>
+
+<div class="photos">
+  <img src="four.jpg">
+  <div class="text">Slide three.jpg</div>
+</div>
+
+<a href="#" onclick="plusSlides(-1)">Previous Picture</a>
+<a href="#" onclick="plusSlides(1)">Next Picture</a>
+
+</div>
+<br>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("photos");
+var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
